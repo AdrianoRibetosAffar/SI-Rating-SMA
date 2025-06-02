@@ -196,7 +196,7 @@
 }
 
 .page-header {
-    background: linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .7)), url(../img/bg-japrax.png);
+    background: linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .7)), url(../img/bg-japrax.png); /* Background Photo */
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -308,7 +308,7 @@
     margin-bottom: 5px;
     padding: 0;
     text-align: left;
-    color: #FFFFFF;
+    color: transparent;
     font-size: 15px;
     font-weight: normal;
     text-transform: capitalize;
@@ -348,4 +348,106 @@
     margin-right: 0;
     padding-right: 0;
     border-right: none;
+}
+/* Rating System Styles */
+.stars-input {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 2px;
+}
+
+.star-label {
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.2s ease;
+    color: #ddd;
+}
+
+.star-label:hover {
+    transform: scale(1.1);
+}
+
+.star-label i {
+    transition: color 0.2s ease;
+}
+
+.stars-display i {
+    font-size: 14px;
+    margin-right: 1px;
+}
+
+.rating-stats {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+}
+
+.rating-form {
+    border-top: 1px solid #eee;
+    padding-top: 8px;
+}
+
+.captcha-section {
+    animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.product-card {
+    background: rgb(255, 255, 255);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    height: 100%;
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.445), inset 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+.category-badge {
+    background: #e5e7eb;
+    color: #006aff;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+}
+
+/* Alert customization */
+.alert-sm {
+    font-size: 0.8rem;
+    border-radius: 6px;
+}
+
+/* Badge ranking colors */
+.badge.bg-warning {
+    background-color: #ffc107 !important;
+    color: #000 !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .star-label {
+        font-size: 16px;
+    }
+    
+    .stars-input {
+        gap: 1px;
+    }
 }

@@ -32,6 +32,9 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Library link AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <!-- Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
@@ -59,9 +62,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link">Home</a>
-                <a href="school.html" class="nav-item nav-link">School</a>
-                <a href="tentang.html" class="nav-item nav-link">About</a>
+                <a href="index.php" class="nav-item nav-link">Home</a>
+                <a href="school.php" class="nav-item nav-link">School</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
                 <a href="team.html" class="nav-item nav-link">Our Team</a>
             </div>
         </div>
@@ -136,21 +139,19 @@
     <!-- About Start -->
     <div class="container-xxl py-5">
         <div class="container">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.5s">
+            <div class="text-center" data-aos="fade-up" data-aos-duration="1200">
                 <h4 class="section-title bg-white text-center text-primary px-3">About</h4>                
             </div>
             <br>
             <div class="row g-8">
-                <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                <div class="col-lg-4 " data-aos="fade-up" data-aos-duration="1200" style="min-height: 400px;">
                     <div class="position-relative h-100">
                         <img class="img-fluid position-absolute w-100 h-150" src="img/si-logo.png" alt="" >
                     </div>
                 </div>
-                <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.3s">
-                    <h1 class="mb-4">Lorem ipsum dolor sit amet.</h1>
-                    <p class="mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et magni, 
-                        quos excepturi at consequatur voluptatibus, ipsa iste quas cum nemo molestiae nisi nesciunt deserunt? Culpa quos sint ipsam omnis possimus aspernatur officia voluptatem mollitia et, 
-                        minima quasi laudantium! Ab obcaecati quod debitis facilis voluptatem consequuntur dolorem ut corporis excepturi asperiores?</p>
+                <div class="col-lg-8" data-aos="fade-up" data-aos-duration="1200" >
+                    <h1 class="mb-4">Sistem Informasi Rating SMA di Jayapura</h1>
+                    <p class="mb-0">"Website ini dirancang untuk memberikan informasi yang akurat dan terpercaya mengenai peringkat sekolah menengah atas (SMA) di Jayapura. Dengan tujuan membantu siswa, orang tua, dan masyarakat dalam memilih sekolah terbaik, kami menyediakan data lengkap mengenai akreditasi, lokasi, dan fasilitas sekolah. Sistem ini juga mendukung transparansi dan kemudahan akses informasi pendidikan di era digital."</p>
                     <br>
                     <a class="btn btn-outline-primary py-2 px-2 mt-6" href="team.html">Team Kami</a>
                 </div>
@@ -185,7 +186,7 @@
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
           © 2025 Copyright:
-          <a class="text-white" href="https://mdbootstrap.com/">Kelompok VII Manajemen Proyek</a>
+          <a class="text-white">Kelompok VII Manajemen Proyek</a>
         </div>
         <!-- Copyright -->
       </footer>
@@ -199,10 +200,16 @@
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
